@@ -6,4 +6,6 @@ ActiveRecord::Base.establish_connection(
   :database => "db/#{ENV['SINATRA_ENV']}.sqlite"
 )
 
+ActiveRecord::Base.logger = nil
+
 require_all 'app'
